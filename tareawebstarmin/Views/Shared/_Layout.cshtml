@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Dashboard</title>
+
+    <!-- Referencias CSS -->
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Content/css/custom.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Sistema de Conversión</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Inicio</a></li>
+                    <li><a href="/Dashboard">Dashboard</a></li>
+                    <li><a href="/About">Acerca de</a></li>
+                    <li><a href="/Contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Contenido de la página -->
+        <div class="container" style="margin-top: 60px;">
+            @RenderBody()
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center" style="margin-top: 30px;">
+        <p>&copy; 2024 Sistema de Conversión. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Referencias JS -->
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/custom.js"></script>
+</body>
+</html>
